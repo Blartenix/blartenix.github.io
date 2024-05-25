@@ -6,10 +6,10 @@ import Footer from './components/Footer'
 function App() {
   return (
     <>
-      <nav className='fixed top-0 w-full'>
+      <nav className='fixed top-0 w-full z-50'>
         <Navbar />
       </nav>
-      <main className='pt-24'>
+      <main className='pt-32'>
         <Body />
         </main>
         <Footer />
