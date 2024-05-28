@@ -6,7 +6,7 @@ interface GameCardProps {
     name: string;
     description: string;
     category: string;
-    photo: string;
+    img: string;
     link: string;
   };
 }
@@ -14,7 +14,7 @@ interface GameCardProps {
 function GameCard({ game }: GameCardProps) {
 
   const background =
-    <img src={game.photo} alt={game.name} className='h-full w-full object-cover' />
+    <img src={game.img} alt={game.name} className='h-full w-full object-cover' />
 
   const tileLayer =
     <div className="tile-layer">
