@@ -1,0 +1,32 @@
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: CI
+
+on:
+  pull_request:
+    branches: ["main"]
+
+env:
+  # Get PR information
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  build-client:
+    name: Build app
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: "."
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18.16.0
+          cache: "npm"
+          cache-dependency-path: ./package-lock.json
+      - name: Install dependencies
+        run: npm ci
+      - name: Build project
+        run: npm run build
