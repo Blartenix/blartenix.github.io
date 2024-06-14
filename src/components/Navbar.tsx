@@ -23,8 +23,8 @@ export default function NavBar() {
   return (
     <>
       <div className='flex items-center bg-transparent px-48 py-3 justify-center z-50'>
-        <ul className='flex items-center space-x-5 justify-center backdrop-blur-md bg-slate-800/80 rounded-full p-2
-                       border-zinc-400/10 border-[1.5px]'>
+        <ul className='flex items-center space-x-5 justify-center backdrop-blur-md bg-[#01214B]/80 rounded-full p-2
+                       border-zinc-400/15 border-[1.5px]'>
           <Item word="Games" icon={Gamepad} />
           <Item word="Assets" icon={Puzzle}/>
           <Item word="Contact" icon={Contact}/>
