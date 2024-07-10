@@ -11,10 +11,10 @@ function App() {
       </nav>
       <main className='pt-32'>
         <Body />
-        </main>
-        <Footer />
+      </main>
+      <Footer />
     </>
-      )
+  )
 }
 
-      export default App
+export default App
