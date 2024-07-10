@@ -7,14 +7,14 @@ import Games from './sections/Games'
 export default function Body() {
   return (
           <>
-                  <div className='space-y-48 my-3 mx-2'>
+                  <div className='space-y-40 my-3 mx-2'>
                           <Section title='Games'>
                                   <Games />
                           </Section>
                           <Section title='Assets'>
                                   <Assets />
                           </Section>
-                          <Section title='Contact'>
+                          <Section title='Contact us'>
                                   <Contact/>
                           </Section>
                   </div>
